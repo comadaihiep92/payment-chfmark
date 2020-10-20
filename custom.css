@@ -1,6 +1,7 @@
 #checkout {
   width: 100%;
 }
+
 #checkout .title {
   width: 1150px;
   margin: 20px auto;
@@ -8,18 +9,21 @@
   font-size: 24px;
   font-weight: bold;
 }
+
 #checkout .deli {
   color: #2f8b02;
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 400;
 }
+
 #checkout .address {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 35px;
 }
+
 #checkout .addressbox {
   width: 190px;
   height: 245px;
@@ -28,6 +32,7 @@
   margin-right: 10px;
   padding: 30px 15px;
 }
+
 #checkout .addressbox h3 {
   color: #2f8b02;
   margin: 0;
@@ -35,16 +40,19 @@
   font-weight: bold;
   margin-bottom: 25px;
 }
+
 #checkout .addressbox p {
   color: #8e908d;
   font-size: 15px;
   font-weight: 400;
 }
+
 #checkout .checkne {
   background: #eaf2e7;
   border: 1px solid #2f8b02;
   position: relative;
 }
+
 #checkout .checkne span {
   width: 30px;
   height: 17px;
@@ -55,6 +63,7 @@
   right: 0;
   border-bottom-left-radius: 5px;
 }
+
 #checkout .checkne span::after {
   content: "";
   display: block;
@@ -67,11 +76,13 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+
 #checkout .li-checkout-nav {
   margin: 0;
   background: #f6f6f6;
   margin-left: 15px;
 }
+
 #checkout .li-bill-heading {
   font-size: 20px;
   font-weight: 600;
@@ -81,9 +92,11 @@
   margin-top: 15px;
   padding-bottom: 10px;
 }
+
 #checkout .li-checkout-container .li-checkout-nav .li-bill-details {
   margin: 0 15px;
 }
+
 #checkout .itemorder {
   display: flex;
   align-items: flex-start;
@@ -92,27 +105,33 @@
   padding: 15px 0;
   border-bottom: 1px solid #e1e1e1;
 }
+
 #checkout .itemorder h4 {
   color: #2f8b02;
   margin: 0;
   font-size: 16px;
 }
+
 #checkout .itemorder p {
   color: #000;
   font-size: 16px;
 }
+
 #checkout .itemprice {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #checkout .itemprice p {
   color: #000;
 }
+
 #checkout .itemgift {
   margin-bottom: 10px;
 }
+
 #checkout .itemgift input {
   border: 1px solid #e1e1e1;
   border-radius: 5px;
@@ -122,23 +141,27 @@
   background: #fff;
   margin: 0;
 }
+
 #checkout .itempoint {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
+
 #checkout .itemtotal {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
 }
+
 #checkout .itemtotal p {
   color: #000;
   font-size: 16px;
   font-weight: bold;
 }
+
 #checkout .itemtotal h3 {
   color: #363636;
   font-size: 30px;
@@ -146,4 +169,8 @@
   font-weight: bold;
   margin: 0;
   margin-bottom: 15px;
+}
+
+#checkout .li-checkout-container .li-checkout-pages {
+  background: unset;
 }
