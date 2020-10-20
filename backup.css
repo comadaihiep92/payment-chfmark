@@ -1,0 +1,362 @@
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+.li-checkout-container .li-checkout-pages {
+    background: unset;
+}
+
+.li-checkout-container,
+.upi-loader-container {
+    font-family: Lato;
+}
+
+.li-checkout-container {
+    width: 1150px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+.li-checkout-container * {
+    box-sizing: border-box;
+}
+
+.li-checkout-container p,
+.li-checkout-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.li-checkout-container .li-checkout-pages {
+    display: inline-block;
+    vertical-align: top;
+    background: #f5f5f5;
+    position: relative;
+    z-index: 3;
+    width: 750px;
+    opacity: 0;
+    will-change: transform;
+    animation: stepsSide;
+    animation-delay: .8s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    z-index: 0;
+    position: relative;
+    display: none;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page.active {
+    z-index: 1;
+    display: block;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 450ms ease-out;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page.active .li-page-body {
+    display: block;
+    animation: expandCard;
+    animation-delay: 0s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.li-checkout-container * {
+    box-sizing: border-box;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments {
+    position: relative;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-list {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-list ul li {
+    padding: 0 0 0 15px;
+    font-size: 17px;
+    line-height: 3.5;
+    height: 60px;
+    color: #cbcbcb;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-list ul li.disabled {
+    background: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-list ul li span {
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid #417505;
+    background: #f9fffa;
+    color: #417505;
+    padding: 0 7px;
+    font-weight: 400;
+    margin-left: 15px;
+    line-height: 1.5;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-list ul li span.disabled-msg {
+    display: none;
+    pointer-events: none;
+    width: 95%;
+    border: 1px solid;
+    vertical-align: middle;
+    line-height: 1.2;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: #fff;
+    padding: 6px 10px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 1;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-list ul li {
+    padding: 0 0 0 15px;
+    font-size: 17px;
+    line-height: 3.5;
+    height: 60px;
+    color: #cbcbcb;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-list ul li.active {
+    color: #e41d36;
+    border-right: 5px #e41d36 solid;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder {
+    width: calc(100% - 208px);
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px 15px 15px;
+    position: relative;
+    min-height: 420px;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .pay-method {
+    display: none;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm {
+    padding: 10px 0;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm .li-page-title-paytm {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm ul li {
+    display: block;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #cbcbcb;
+    color: #6d6e71;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm ul li.disabled {
+    cursor: not-allowed;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm ul li .paytm-inline-loader {
+    display: none;
+    width: 180px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -25px;
+    z-index: -1;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm ul li .paytm-inline-loader img {
+    width: 100%;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm ul li .paytm-refresh-loader {
+    display: none;
+    width: 50px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 1;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm .paytm-link-button.show {
+    display: block;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm .paytm-link-button {
+    display: none;
+    width: 150px;
+    color: #e41d36;
+    border: 1px solid #e41d36;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin: 10px 35px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p {
+    position: relative;
+    margin: 0 0 25px;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm .less-amt-err {
+    display: none;
+    color: #e41d36;
+    font-size: 16px;
+    border: 1px solid #e41d36;
+    padding: 10px;
+    margin: 10px 0 0;
+    background-color: #fff6f7;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm .paytm-login .paytm-verify-otp {
+    margin-top: 20px;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm .paytm-login .paytm-verify-otp p {
+    margin: 0 !important;
+}
+
+input:not([type]),
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: 0;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all .3s;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p input[type=text],
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p input[type=number],
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p input[type=tel],
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p input[type=password] {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    height: 45px;
+    padding-left: 5px;
+    line-height: 2.6;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p label {
+    position: absolute;
+    font-size: 16px;
+    top: 5px;
+    pointer-events: none;
+    left: 5px;
+    transition: all 250ms linear;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p span {
+    color: #e41d36;
+    font-size: 12px;
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+    padding: 15px 0;
+    background: #fff;
+    cursor: pointer;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p {
+    position: relative;
+    margin: 0 0 25px;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm .paytm-login .paytm-verify-otp p {
+    margin: 0 !important;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm .paytm-login .paytm-verify-otp .error-paytm-otp {
+    margin: 0;
+    color: #e41d36;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder p button {
+    width: 100%;
+    font-size: 18px;
+    background: #e41d36;
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 25px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    transition: all 50ms ease-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.li-checkout-container .li-checkout-pages .li-checkout-page .li-page-body .li-payments .payment-options-holder .payment-paytm button {
+    width: auto;
+}

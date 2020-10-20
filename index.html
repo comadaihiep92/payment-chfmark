@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+
+    <link rel="stylesheet" href="./abc.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+    <div id="checkout">
+        <h2 class="title">Checkout</h2>
+        <div id="checkout-container" class="li-checkout-container">
+            <p class="deli">Delivery Address</p>
+
+            <div class="li-checkout-pages">
+                <div class="address">
+                    <div class="addressbox checkne">
+                        <h3 class="outletname">
+                            Outlet Name
+                        </h3>
+                        <p>Address line 1</p>
+                        <p>Address line 2</p>
+                        <span class="selectTick"></span>
+                    </div>
+                    <div class="addressbox">
+                        <h3 class="outletname">
+                            Outlet Name
+                        </h3>
+                        <p>Address line 1</p>
+                        <p>Address line 2</p>
+                        <div class="selectTick"></div>
+                    </div>
+                    <div class="addressbox">
+                        <h3 class="outletname">
+                            Outlet Name
+                        </h3>
+                        <p>Address line 1</p>
+                        <p>Address line 2</p>
+                        <div class="selectTick"></div>
+                    </div>
+                </div>
+                <div class="li-checkout-page payment active">
+                    <div class="li-page-body">
+                        <div class="li-payments">
+                            <div class="payment-options-list">
+                                <ul class="tabsabc">
+                                    <li class="disabled" data-payname="saved_payments">Saved Payments</li>
+                                    <li class="enabled active" data-payname="paytm" id="payTM" data-toggle="pill"
+                                        href="#v-paytm" role="tab" aria-controls="payTM" aria-selected="true">Paytm<span
+                                            class="disabled-msg"></span></li>
+                                    <li class="enabled" data-payname="card2" id="payCart" data-toggle="pill"
+                                        href="#v-payCart" role="tab" aria-controls="payCart" aria-selected="false">
+                                        Credit /
+                                        Debit cards<span class="disabled-msg">Cards is experiencing low success rates
+                                            currently, please
+                                            use an alternate payment method.</span></li>
+                                    <li class="enabled" data-payname="netbanking">Netbanking<span
+                                            class="disabled-msg">Netbanking is experiencing low success rates currently,
+                                            please use an alternate payment method.</span></li>
+                                    <li class="enabled" data-payname="wallet">Other wallets<span
+                                            class="disabled-msg"></span></li>
+                                    <li class="enabled" data-payname="upi">Pay using UPI<span class="disabled-msg">As a
+                                            safety measure</span>
+                                    </li>
+                                    <li class="disabled" data-payname="pod">Pay Online on Delivery<span
+                                            class="disabled-msg">As a
+                                            safety measure,</span></li>
+                                    <li class="disabled" data-payname="cod">Cash on Delivery<span
+                                            class="disabled-msg">As a
+                                            safety measure, orders can be placed using only pre-payment options</span>
+                                    </li>
+                                    <li class="disabled" data-payname="paypal">PayPal<span
+                                            class="disabled-msg">Currently
+                                            not available </span></li>
+                                </ul>
+                            </div>
+
+                            <div class="payment-options-holder ">
+
+                                <div class="pay-method payment-paytm paytm show active" data-payname="paytm">
+                                    <div class="li-page-title-paytm">Paytm</div>
+                                    <ul>
+                                        <li class="paytm-checkbox disabled">
+                                            <img class="paytm-img" style="margin-right: 10px; width: 50px;"
+                                                src="./images/paytm.png">
+                                            <span class="before-login"
+                                                style="margin-right: 10px; color: rgb(212, 112, 21); font-size: 14px;">
+                                                (Includes food wallet) </span>
+                                            <span class="paytm-contact" style="margin-right: 10px;">9957765033</span>
+                                            <span class="after-login"
+                                                style="margin-right: 10px; color: #d47015; font-size: 14px; display: none">
+                                                (Includes food wallet) </span>
+                                            <span class="amount-paytm"
+                                                style="float: right; margin-right: 20px; font-size: 16px; font-weight: bold;"></span>
+                                            <div class="paytm-inline-loader"><img src="./images/preloader.gif"></div>
+                                            <div class="paytm-refresh-loader">
+                                                <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+                                                    <title>refresh</title>
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs>
+                                                        <path
+                                                            d="M0,12 C0,5.37221923 5.37258834,0 11.9998791,0 C18.6273512,0 24,5.37221923 24,12 C24,18.6273575 18.6273512,24 11.9998791,24 C5.37258834,24 0,18.6273575 0,12 Z"
+                                                            id="path-1"></path>
+                                                        <filter x="-29.2%" y="-20.8%" width="158.3%" height="158.3%"
+                                                            filterUnits="objectBoundingBox" id="filter-2">
+                                                            <feOffset dx="0" dy="2" in="SourceAlpha"
+                                                                result="shadowOffsetOuter1"></feOffset>
+                                                            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1"
+                                                                result="shadowBlurOuter1"></feGaussianBlur>
+                                                            <feColorMatrix
+                                                                values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.131453804 0"
+                                                                type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                                                        </filter>
+                                                    </defs>
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                        fill-rule="evenodd">
+                                                        <g id="3-copy" transform="translate(-223.000000, -275.000000)">
+                                                            <g id="refresh"
+                                                                transform="translate(227.000000, 277.000000)">
+                                                                <g id="Fill-1">
+                                                                    <use fill="black" fill-opacity="1"
+                                                                        filter="url(#filter-2)" xlink:href="#path-1">
+                                                                    </use>
+                                                                    <use fill="#FFFFFF" fill-rule="evenodd"
+                                                                        xlink:href="#path-1"></use>
+                                                                </g>
+                                                                <path
+                                                                    d="M20.3770389,8.21027455 C19.883271,8.21125447 19.3895627,8.21290808 18.8958543,8.213888 C17.7853834,5.65758623 15.6056585,3.81068439 12.8522371,3.36788361 C9.78458875,2.87431079 6.84852442,4.33726822 5.09778951,6.91071857 C4.32021532,8.05361004 6.14765783,9.1236813 6.91867072,7.99040528 C9.31975017,4.46092172 14.4466936,4.77982402 16.5534687,8.21982876 C16.0972792,8.22105365 15.6412685,8.22221731 15.1850789,8.22319723 C15.0573721,8.22368719 14.9667665,8.2820536 14.9105778,8.36436677 C14.8190178,8.46505342 14.7843025,8.61265368 14.8800976,8.76533727 C15.7489336,10.1495337 16.6175309,11.5335465 17.4864266,12.9175592 C17.632505,13.1500449 17.9475073,13.1481463 18.0922139,12.9151094 C18.954071,11.5268095 19.8161667,10.1383259 20.6780835,8.75002604 C20.8206428,8.52035758 20.6328702,8.20953961 20.3770389,8.21027455 Z"
+                                                                    id="Fill-2" fill="#E41D36"></path>
+                                                                <path
+                                                                    d="M16.5368626,15.9707464 C14.1556647,19.5022397 9.09142353,19.2128216 6.95585131,15.820202 C7.39273116,15.8190288 7.82961102,15.8177938 8.26672934,15.8168676 C8.39389429,15.8163736 8.484275,15.7579589 8.54037543,15.6752769 C8.63212736,15.5734526 8.66730191,15.4246372 8.57137673,15.2702645 C7.70316149,13.8748581 6.83500586,12.4792664 5.96679061,11.0841071 C5.82102489,10.8493987 5.50594437,10.8513129 5.36131138,11.0865153 C4.49965411,12.4859971 3.63799683,13.8859729 2.77633955,15.2859487 C2.63403166,15.5175079 2.82170876,15.8308229 3.07723101,15.8300819 C3.58606965,15.8286617 4.09490829,15.8274267 4.60374693,15.8260064 C5.72462277,18.3613631 7.88416138,20.1896925 10.6067313,20.6313222 C13.6728791,21.1289582 16.6074502,19.6542043 18.3568774,17.0593214 C19.1339965,15.906836 17.3074834,14.8278938 16.5368626,15.9707464 Z"
+                                                                    id="Fill-3" fill="#E41D36"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <span class="paytm-link-button show">Link</span>
+                                    <p class="less-amt-err">Insufficient balance. Tap pay to add money and pay</p>
+                                    <div class="paytm-login">
+                                        <div class="paytm-verify-otp" style="display: none">
+                                            <p class="search-wrapper">
+                                                <input type="text" class="paytm-otp" required="">
+                                                <label for="">Enter OTP</label>
+                                                <span class="resendpaytm-otp"
+                                                    style="position: absolute; top: 5px; right: 20px; font-size: 16px;">Resend</span>
+                                            </p>
+                                            <p class="error-paytm-otp"></p>
+                                            <p>
+                                                <button class="paytm-verifyOTP">Verify</button>
+                                            </p>
+                                        </div>
+                                        <button class="add-money" style="display: none">Add Money</button>
+                                    </div>
+                                    <form method="post" id="paytmForm" action="https://www.licious.in/paytm-redirect"
+                                        accept-charset="utf-8">
+                                        <input type="hidden" name="_token"
+                                            value="1S95MtKUgiDHiuu1WKDzYBEtHVJW1Uci8RCNruDf">
+                                        <input id="paytmtxtamount" name="paytmtxtamount" value="" hidden="true">
+                                        <input id="paytmorderid" name="paytmorderid" value="" hidden="true">
+                                        <input id="paytmcustid" name="paytmcustid" value="" hidden="true">
+                                        <input id="paytmssotoken" name="paytmssotoken" value="" hidden="true">
+                                        <input id="paytmmobile" name="paytmmobile" value="" hidden="true">
+                                        <input id="paytmcallback" name="paytmcallback" value="" hidden="true">
+                                    </form>
+                                    <form method="post" id="callback"
+                                        action="https://securegw.paytm.in/theia/processTransaction" name="f1">
+                                        <table border="1">
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </div>
+
+                                <div class="pay-method payment-card card2 " data-payname="card2">
+                                    <div class="new-card">
+                                        <div class="li-page-title">
+                                            New Card
+                                        </div>
+                                        <p>
+                                            <input type="text" required="" data-card="detail" maxlength="16"
+                                                onkeydown="validate(event)" data-type="card-num">
+                                            <label for="">Enter card no.</label>
+                                        </p>
+                                        <div class="card-expiry">
+                                            <p>
+                                                <input type="text" required="" maxlength="2" onkeydown="validate(event)"
+                                                    data-card="detail" data-type="card-mon">
+                                                <label for="">MM</label>
+                                            </p>
+                                            <span>/</span>
+                                            <p>
+                                                <input type="text" required="" maxlength="4" onkeydown="validate(event)"
+                                                    data-card="detail" data-type="card-year">
+                                                <label for="">YYYY</label>
+                                            </p>
+                                            <p class="cvv-input">
+                                                <input type="password" required="" maxlength="4"
+                                                    onkeydown="validate(event)" data-card="detail" data-type="card-cvv">
+                                                <label for="" class="">Enter CVV</label>
+                                            </p>
+                                        </div>
+                                        <p>
+                                            <input type="text" required="" data-card="detail" data-type="card-name ">
+                                            <label for="">Name on card.</label>
+                                        </p>
+                                        <p>
+                                            <b class="save-card checked"></b>
+                                            Securely save card for future use
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="pay-method upi" data-payname="upi">
+                                    <div class="upi-title">Pay using UPI</div>
+                                    <ul class="upi-list-wrapper"><button class="upi-card g_pay selected"
+                                            data-display="Google Pay" data-method="upi" data-methodname="upi"
+                                            data-paysource="g_pay" data-index="0" data-enabled="true">
+                                            <div class="upi-image center-fit"><img src="./images/upi_gpay.png" class="">
+                                            </div>
+                                            <p class="upi-offer"></p>
+                                            <p class="dis-msg"></p>
+                                            <div class="g_pay button-check show"></div>
+                                        </button><button class="upi-card paytm_upi" data-display="Paytm"
+                                            data-method="upi" data-methodname="upi" data-paysource="paytm_upi"
+                                            data-index="1" data-enabled="true">
+                                            <div class="upi-image center-fit"><img src="./images/paytm_upi2.png"
+                                                    class="">
+                                            </div>
+                                            <p class="upi-offer"></p>
+                                            <p class="dis-msg"></p>
+                                            <div class="paytm_upi button-check"></div>
+                                        </button><button class="upi-card more_upi" data-display="More UPI"
+                                            data-method="upi" data-methodname="upi" data-paysource="more_upi"
+                                            data-index="2" data-enabled="true">
+                                            <div class="upi-image center-fit"><img src="./images/more_upi_v2.png"
+                                                    class="">
+                                            </div>
+                                            <p class="upi-offer"></p>
+                                            <p class="dis-msg"></p>
+                                            <div class="more_upi button-check"></div>
+                                        </button></ul>
+                                    <div class="vpa-section show">
+                                        <p class="upi-notify">Enter your VPA ID / UPI ID &amp; Tap pay to proceed</p>
+                                        <input type="text" class="user-vpa" id="user-vpa"
+                                            placeholder="eg. Johnsmith@upi, 9881529278@axisbank" autofocus="">
+                                        <div class="error-upi-vpa"
+                                            style="font-size: 11px; color: #e41d36; margin-top: 10px; display: block;">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="pay-method other-wallets wallet" data-payname="wallet">
+                                    <div class="li-page-title">Other wallets</div>
+                                    <ul>
+                                        <li class="enabled" style="display: flex; align-items: center;"
+                                            data-paymode="amazonpay"><span class="img-holder"><img
+                                                    src="./images/amaznpay.png"></span><span
+                                                style="display: flex;flex-direction: column;"><span
+                                                    class="disp-name">Amazon
+                                                    Pay</span></span></li>
+                                        <li class="enabled" style="display: flex; align-items: center;"
+                                            data-paymode="olamoney"><span class="img-holder"><img
+                                                    src="./images/new-ola2.png"></span><span
+                                                style="display: flex;flex-direction: column;"><span
+                                                    class="disp-name">Ola
+                                                    Money</span></span></li>
+                                        <li class="enabled" style="display: flex; align-items: center;"
+                                            data-paymode="airtelmoney"><span class="img-holder"><img
+                                                    src="./images/airtelmoney.png"></span><span
+                                                style="display: flex;flex-direction: column;"><span
+                                                    class="disp-name">Airtel
+                                                    Money</span></span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="pay-method net-banking netbanking" data-payname="netbanking">
+                                    <div class="preffered-banking">
+                                        <div class="li-page-title">
+                                            Popular Banks
+                                        </div>
+                                        <ul class="preffered-banking-list">
+                                            <li data-bc="HDFC" class="selected"><img src="./images/HDFC.png">HDFC Bank
+                                            </li>
+                                            <li data-bc="ICIC"><img src="./images/icici.png">ICICI Bank</li>
+                                            <li data-bc="UTIB"><img src="./images/AXIB_1.png">Axis Bank</li>
+                                            <li data-bc="KKBK"><img src="./images/kotak.png">Kotak Bank</li>
+                                            <li data-bc="YESB"><img src="./images/yes.png">Yes Bank</li>
+                                            <li data-bc="SBIN"><img src="./images/SBI.png">State Bank of India</li>
+                                            <li data-bc="ANDB"><img src="./images/andhra.png">Andhra Bank</li>
+                                            <li data-bc="CNRB"><img src="./images/canarabank.png">Canara Bank</li>
+                                            <li data-bc="BARB_R"><img src="./images/bob.png">Bank of Baroda</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="li-page-title second">
+                                        Other Banks
+                                    </div>
+
+                                    <p class="search-wrapper">
+                                        <input type="text" class="search-bank" required="">
+                                        <label for="">Select Bank</label>
+                                    </p>
+                                    <div class="dropdown-list">
+                                        <div class="screen"></div>
+                                        <p data-bc="AUBL" class="see">AU Small Finance Bank</p>
+                                        <p data-bc="AIRP" class="see">Airtel Payments Bank</p>
+                                        <p data-bc="ALLA" class="see">Allahabad Bank</p>
+                                        <p data-bc="ANDB" class="see">Andhra Bank</p>
+                                        <p data-bc="UTIB" class="see">Axis Bank</p>
+                                        <p data-bc="BBKM" class="see">Bank of Bahrein and Kuwait</p>
+                                        <p data-bc="BARB_R" class="see">Bank of Baroda - Retail Banking</p>
+                                        <p data-bc="MAHB" class="see">Bank of Maharashtra</p>
+                                        <p data-bc="CNRB" class="see">Canara Bank</p>
+                                        <p data-bc="CSBK" class="see">Catholic Syrian Bank</p>
+                                        <p data-bc="CBIN" class="see">Central Bank of India</p>
+                                        <p data-bc="COSB" class="see">Cosmos Co-operative Bank</p>
+                                        <p data-bc="DCBL" class="see">DCB Bank</p>
+                                        <p data-bc="BKDN" class="see">Dena Bank</p>
+                                        <p data-bc="DEUT" class="see">Deutsche Bank</p>
+                                        <p data-bc="DBSS" class="see">Development Bank of Singapore</p>
+                                        <p data-bc="DLXB" class="see">Dhanlaxmi Bank</p>
+                                        <p data-bc="ESFB" class="see">Equitas Small Finance Bank</p>
+                                        <p data-bc="FDRL" class="see">Federal Bank</p>
+                                        <p data-bc="FSFB" class="see">Fincare Small Finance Bank</p>
+                                        <p data-bc="HDFC" class="see">HDFC Bank</p>
+                                        <p data-bc="ICIC" class="see">ICICI Bank</p>
+                                        <p data-bc="IBKL" class="see">IDBI</p>
+                                        <p data-bc="IDFB" class="see">IDFC FIRST Bank</p>
+                                        <p data-bc="IDIB" class="see">Indian Bank</p>
+                                        <p data-bc="IOBA" class="see">Indian Overseas Bank</p>
+                                        <p data-bc="INDB" class="see">Indusind Bank</p>
+                                        <p data-bc="JAKA" class="see">Jammu and Kashmir Bank</p>
+                                        <p data-bc="JSFB" class="see">Jana Small Finance Bank</p>
+                                        <p data-bc="JSBP" class="see">Janata Sahakari Bank (Pune)</p>
+                                        <p data-bc="KARB" class="see">Karnataka Bank</p>
+                                        <p data-bc="KVBL" class="see">Karur Vysya Bank</p>
+                                        <p data-bc="KKBK" class="see">Kotak Mahindra Bank</p>
+                                        <p data-bc="LAVB_C" class="see">Lakshmi Vilas Bank - Corporate Banking</p>
+                                        <p data-bc="LAVB_R" class="see">Lakshmi Vilas Bank - Retail Banking</p>
+                                        <p data-bc="NKGS" class="see">NKGSB Co-operative Bank</p>
+                                        <p data-bc="ORBC" class="see">PNB (Erstwhile-Oriental Bank of Commerce)</p>
+                                        <p data-bc="UTBI" class="see">PNB (Erstwhile-United Bank of India)</p>
+                                        <p data-bc="PSIB" class="see">Punjab &amp; Sind Bank</p>
+                                        <p data-bc="PUNB_R" class="see">Punjab National Bank - Retail Banking</p>
+                                        <p data-bc="RATN" class="see">RBL Bank</p>
+                                        <p data-bc="SRCB" class="see">Saraswat Co-operative Bank</p>
+                                        <p data-bc="SVCB" class="see">Shamrao Vithal Co-operative Bank</p>
+                                        <p data-bc="SIBL" class="see">South Indian Bank</p>
+                                        <p data-bc="SCBL" class="see">Standard Chartered Bank</p>
+                                        <p data-bc="SBBJ" class="see">State Bank of Bikaner and Jaipur</p>
+                                        <p data-bc="SBHY" class="see">State Bank of Hyderabad</p>
+                                        <p data-bc="SBIN" class="see">State Bank of India</p>
+                                        <p data-bc="SBMY" class="see">State Bank of Mysore</p>
+                                        <p data-bc="STBP" class="see">State Bank of Patiala</p>
+                                        <p data-bc="SBTR" class="see">State Bank of Travancore</p>
+                                        <p data-bc="SYNB" class="see">Syndicate Bank</p>
+                                        <p data-bc="TMBL" class="see">Tamilnadu Mercantile Bank</p>
+                                        <p data-bc="TNSC" class="see">Tamilnadu State Apex Co-operative Bank</p>
+                                        <p data-bc="UCBA" class="see">UCO Bank</p>
+                                        <p data-bc="UBIN" class="see">Union Bank of India</p>
+                                        <p data-bc="CORP" class="see">Union Bank of India (Erstwhile Corporation Bank)
+                                        </p>
+                                        <p data-bc="VIJB" class="see">Vijaya Bank</p>
+                                        <p data-bc="YESB" class="see">Yes Bank</p>
+                                    </div>
+                                </div>
+
+                                <div class="pay-method cod" data-payname="cod">
+                                    <div class="li-page-title">Cash on Delivery</div>
+                                    <img src="./images/Cash on delivery.png">
+                                </div>
+
+                                <div class="pay-method pod" data-payname="pod">
+                                    <div class="li-page-title">Pay Online on Delivery</div>
+                                    <img src="./images/pay on delivery.png">
+                                </div>
+
+                                <div class="pay-method preffered preferred_payments" data-payname="preferred_payments">
+                                    <div class="li-page-title">
+                                        Preferred Payments
+                                    </div>
+                                </div>
+
+                                <div class="pay-method saved saved_payments active" data-payname="saved_payments">
+                                    <div class="cards">
+                                        <div class="li-page-title">
+                                            Saved Cards
+                                        </div>
+                                        <ul></ul>
+                                    </div>
+                                </div>
+
+
+                                <div class="pay-method paypal" data-payname="paypal">
+                                    <div class="li-page-title">
+                                    </div>
+                                    <ul id="paypal-payment-types">
+                                        <!-- <li class="enabled selected">
+           Faster way to pay credit cards only
+        </li>
+        <li>
+           Paypal regular checkout
+        </li> -->
+                                        <li data-paymentcode="paypal_auto_pay" id="paypal_auto_pay"
+                                            class="paypal-payment-options enabled" style="opacity: 1;">Faster way to Pay
+                                            (Credit Cards Only)<div style="color: green;font-size: 10px;"></div>
+                                        </li>
+                                        <li data-paymentcode="paypal_one_time_pay" id="paypal_one_time_pay"
+                                            class="paypal-payment-options enabled" style="opacity: 1;">PayPal Regular
+                                            Checkout (For Credit and Debit Card users Only)<div
+                                                style="color: green;font-size: 10px;"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pay-method success-failure" id="paypal-order-success">
+                                    Successfull paid the money
+                                    <ul id="paypal-payment-types">
+                                        <!-- <li class="enabled selected">
+           Faster way to pay credit cards only
+        </li>
+        <li>
+           Paypal regular checkout
+        </li> -->
+                                    </ul>
+                                </div>
+
+                                <div class="pay-method success-failure" id="paypal-order-faliure">
+                                    Successfull paid the money
+                                    <ul id="paypal-payment-types">
+                                        <!-- <li class="enabled selected">
+           Faster way to pay credit cards only
+        </li>
+        <li>
+           Paypal regular checkout
+        </li> -->
+                                    </ul>
+                                </div>
+                                <div class="pay-method success-failure" id="paypal-billing-agreement-success">
+                                    Successfull paid the money
+                                    <ul id="paypal-payment-types">
+                                        <!-- <li class="enabled selected">
+           Faster way to pay credit cards only
+        </li>
+        <li>
+           Paypal regular checkout
+        </li> -->
+                                    </ul>
+                                </div>
+
+                                <div class="pay-method success-failure" id="paypal-billing-agreement-failure">
+                                    Successfull paid the money
+                                    <ul id="paypal-payment-types">
+                                        <!-- <li class="enabled selected">
+           Faster way to pay credit cards only
+        </li>
+        <li>
+           Paypal regular checkout
+        </li> -->
+                                    </ul>
+                                </div>
+
+                                <div class="payment-cta">
+                                    <button class="init-pay" data-mode="card" style="display: block;">Pay <i
+                                            class="rupee">403.00</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function validate(evt) {
+                            var val = evt.keyCode;
+                            if ((val < 47 || val > 57) && val != 8 && val != 9 && val != 37 && val != 39) {
+                                evt.preventDefault()
+                            }
+                        }
+                    </script>
+
+
+                </div>
+            </div>
+            <div class="li-checkout-nav">
+                <div class="li-bill-details" style="display: block;">
+                    <div class="li-bill-heading">
+                        YOUR ORDER:
+                    </div>
+                    <div class="itemorder">
+                        <h4>Cabbage</h4>
+                        <p>2 x ₹28</p>
+                    </div>
+                    <div class="itemprice">
+                        <p>2 item(s)</p>
+                        <p>₹56</p>
+                    </div>
+                    <div class="itemgift">
+                        <input type="text" placeholder="Gift certificate or promo code">
+                    </div>
+                    <div class="itempoint">
+                        <p>Points</p>
+                        <p>6</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p>Order Total</p>
+                        <h3>₹56</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- <script src="./ch.js"></script> -->
+    <script>
+        $(document).ready(function () {
+
+            $('ul.tabsabc li').click(function () {
+                var tab_id = $(this).attr('data-payname');
+                console.log("tabid: ", tab_id)
+                $('ul.tabsabc li').removeClass('active');
+                $('.pay-method').removeClass('active');
+
+                $(this).addClass('active');
+
+                $("." + tab_id).addClass('active');
+            })
+            $('.other-wallets li').click(function () {
+                var tab_id2 = $(this).attr('data-bc');
+                console.log("tabid: ", tab_id2)
+                $('.other-wallets li').removeClass('selected');
+                // $('.pay-method').removeClass('active');
+
+                $(this).addClass('selected');
+
+                // $("." + tab_id).addClass('active');
+            })
+            $('.preffered-banking li').click(function () {
+                var tab_id = $(this).attr('data-bc');
+                console.log("tabid: ", tab_id)
+                $('.preffered-banking li').removeClass('selected');
+                // $('.pay-method').removeClass('active');
+
+                $(this).addClass('selected');
+
+                // $("." + tab_id).addClass('active');
+            })
+            $('.upi-list-wrapper button').click(function () {
+                var tab_id = $(this).attr('data-paysource');
+                console.log("tabid: ", tab_id)
+                $('.upi-list-wrapper button').removeClass('selected');
+                // $('.pay-method').removeClass('active');
+                $('.button-check').removeClass('show');
+                $(this).addClass('selected');
+
+                // $('.pay-method').removeClass('active');
+
+
+
+                $("." + tab_id).addClass('show');
+            })
+            $('.save-card').click(function () {
+
+                $(this).toggleClass('checked');
+
+            })
+
+            $('.search-wrapper').click(function () {
+                console.log("clickeddđ")
+                if ($('.search-wrapper label').hasClass('active')) {
+                    console.log("heeeee")
+                    $('.dropdown-list').css("display", "block")
+                }
+            })
+
+            $(document).mouseup(function (e) {
+                var container = $(".dropdown-list");
+
+                // if the target of the click isn't the container nor a descendant of the container
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    container.hide();
+                }
+            });
+
+
+
+            $('.dropdown-list p').click(function () {
+                var tab_id = $(this).attr('data-bc');
+                var getText = $(`p[data-bc=${tab_id}]`).text();
+                console.log("tab: ", tab_id, 'text: ', $(`p[data-bc=${tab_id}]`).text())
+                $('.search-bank').val(getText)
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>
